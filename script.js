@@ -24,6 +24,14 @@ const text = document.querySelector(".text")
 
 let playerDeck, computerDeck, inRound, stop
 
+class Player {
+  constructor(name) {
+  this.name = name
+  }
+}
+
+
+
 document.addEventListener("click", () => {
   if (stop) {
     startGame()
